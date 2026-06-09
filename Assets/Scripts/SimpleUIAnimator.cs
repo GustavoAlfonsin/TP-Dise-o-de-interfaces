@@ -81,14 +81,14 @@ public class SimpleUIAnimator :
         targetAmount = Mathf.Lerp(
             targetAmount,
             goal,
-            Time.deltaTime * speed
+            Time.unscaledDeltaTime * speed
         );
 
         currentAmount =
             Mathf.Lerp(
                 currentAmount,
                 targetAmount,
-                Time.deltaTime * speed
+                Time.unscaledDeltaTime * speed
             );
 
         float t =
@@ -116,7 +116,7 @@ public class SimpleUIAnimator :
                     Vector3.Lerp(
                         target.localScale,
                         finalScale,
-                        Time.deltaTime * speed
+                        Time.unscaledDeltaTime * speed
                     );
 
                 break;
