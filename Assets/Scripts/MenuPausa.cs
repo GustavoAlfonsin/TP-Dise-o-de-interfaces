@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject InventoryPanel;
+    [SerializeField] private GameObject DayText;
+    [SerializeField] private GameObject lifeBar;
+    [SerializeField] private GameObject heartBar;
     [SerializeField] private string menuSceneName = "MenuPrincipal";
 
     private bool isPaused = false;
@@ -30,6 +34,10 @@ public class MenuPausa : MonoBehaviour
     public void PauseGame()
     {
         pausePanel.SetActive(true);
+        InventoryPanel.SetActive(false);
+        DayText.SetActive(false);
+        lifeBar.SetActive(false);
+        heartBar.SetActive(false);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -37,6 +45,10 @@ public class MenuPausa : MonoBehaviour
     public void ResumeGame()
     {
         pausePanel.SetActive(false);
+        InventoryPanel.SetActive(true);
+        DayText.SetActive(true);
+        lifeBar.SetActive(true);
+        heartBar.SetActive(true);
         Time.timeScale = 1f;
         isPaused = false;
     }
