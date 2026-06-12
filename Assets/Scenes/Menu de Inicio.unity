@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 18469277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1889812064}
+        m_TargetAssemblyTypeName: MenuDeInicio, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &18469277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166241640}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1889812064}
+        m_TargetAssemblyTypeName: MenuDeInicio, Assembly-CSharp
+        m_MethodName: IniciarJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &166241640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1759,6 +1783,7 @@ GameObject:
   - component: {fileID: 1889812063}
   - component: {fileID: 1889812062}
   - component: {fileID: 1889812061}
+  - component: {fileID: 1889812064}
   m_Layer: 5
   m_Name: Botones
   m_TagString: Untagged
@@ -1852,6 +1877,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889812059}
   m_CullTransparentMesh: 1
+--- !u!114 &1889812064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889812059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b1ced18bc659d4cbae1039434697f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenaJuego: PlayMode
 --- !u!1 &1897418044
 GameObject:
   m_ObjectHideFlags: 0
